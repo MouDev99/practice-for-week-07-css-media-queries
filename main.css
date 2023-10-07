@@ -86,12 +86,38 @@ header {
 
 /* Your code here */
 
+@media (min-width: 82px) {
+    .content {
+        flex-direction: row;
+    }
+}
+
 /* ----- Phase 1 - Wide Screen ----- */
 
 /* Your code here */
 
+@media (min-width: 1200px) {
+    .page {
+        flex-direction: row;
+    }
+}
 /* ===== PRINTING ===== */
 
 /* Phase 2 */
 
 /* Your code here */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .story-box * {
+        visibility: visible;
+    }
+
+    .story-box {
+        background-color: white;
+        filter: none;
+    }
+}
